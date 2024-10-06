@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise!</title>
+    <title>My Video Page</title>
     <style>
         body {
             text-align: center;
@@ -11,27 +11,19 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
-        h1 {
-            color: #ff6347;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #ff6347;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #e55347;
+        video {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>You've found a surprise!</h1>
-    <p>Click the button to see what happens... 😏</p>
-    <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Click Me!</button>
+    <h1>Enjoy the Video!</h1>
+    <video controls>
+        <source src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4"> <!-- Make sure the video name matches exactly -->
+        <source src="myvideo.webm" type="video/webm">
+        <source src="myvideo.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
